@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TraceResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <threadz>
+    <threadRecord>
+      <id>1</id>
+      <methodZ>
+        <methodRecord>
+          <classname>ConsoleApp1.Program</classname>
+          <executionTimes>1</executionTimes>
+          <fullName>Program.Main</fullName>
+          <avgTime>348995</avgTime>
+          <methodZ />
+        </methodRecord>
+      </methodZ>
+    </threadRecord>
+    <threadRecord>
+      <id>5</id>
+      <methodZ>
+        <methodRecord>
+          <classname>ConsoleApp1.Program</classname>
+          <executionTimes>1</executionTimes>
+          <fullName>Program.ThreadStart.RunInternal.ThreadStart_Context.ThreadProc</fullName>
+          <avgTime>12230209</avgTime>
+          <methodZ />
+        </methodRecord>
+      </methodZ>
+    </threadRecord>
+    <threadRecord>
+      <id>6</id>
+      <methodZ>
+        <methodRecord>
+          <classname>ConsoleApp1.Program</classname>
+          <executionTimes>1</executionTimes>
+          <fullName>Program.ThreadStart.RunInternal.ThreadStart_Context.ThreadProc2</fullName>
+          <avgTime>35277066</avgTime>
+          <methodZ>
+            <methodRecord>
+              <classname>ConsoleApp1.Program</classname>
+              <executionTimes>2</executionTimes>
+              <fullName>.ThreadProc</fullName>
+              <avgTime>12136357</avgTime>
+              <methodZ />
+            </methodRecord>
+          </methodZ>
+        </methodRecord>
+      </methodZ>
+    </threadRecord>
+  </threadz>
+</TraceResult>

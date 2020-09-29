@@ -1,0 +1,4 @@
+C:\Users\vitiav\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.1\TracerLib.csprojAssemblyReference.cache
+C:\Users\vitiav\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.1\TracerLib.csproj.CoreCompileInputs.cache
+C:\Users\vitiav\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.1\TracerLib.AssemblyInfoInputs.cache
+C:\Users\vitiav\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.1\TracerLib.AssemblyInfo.cs
