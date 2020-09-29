@@ -1,5 +1,9 @@
-using ConsoleApp1;
-using ConsoleApp1.serializers;
+//using ConsoleApp1;
+//using ConsoleApp1.serializers
+
+using TraceLib;
+using TraceLib.serializers;
+
 using Microsoft.VisualBasic.CompilerServices;
 using NUnit.Framework;
 using System;

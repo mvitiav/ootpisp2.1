@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 
-namespace ConsoleApp1
+namespace TraceLib
 {
     [Serializable]
     public class TraceRecord : IComparable<TraceRecord>

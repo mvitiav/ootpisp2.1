@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿//using Newtonsoft.Json;
 
-namespace ConsoleApp1.serializers
+using Newtonsoft.Json;
+
+namespace TraceLib.serializers
 {
     public class jsonSer : ISerializer
     {

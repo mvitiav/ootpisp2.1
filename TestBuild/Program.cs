@@ -1,5 +1,5 @@
-﻿using ConsoleApp1;
-using ConsoleApp1.serializers;
+﻿using TraceLib;
+using TraceLib.serializers;
 using System;
 using System.Threading;
 

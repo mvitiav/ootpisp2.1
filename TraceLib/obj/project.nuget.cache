@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aEfP4rRO5YzqYBOVBIeMyEafwYo28OjATqxrm1tBWqGWgK+GhSeBFHfNEbQ2Qr49XYcMLo8udNA5ddMExpcYsQ==",
+  "dgSpecHash": "El6FkfMubFC5pUCn0o9R3cd6oPDP5B9cXx4vNQPUscESGQtxYQHHxqOTj9uQMD8dmN1n4YCYx8IYysBgVFfWKA==",
   "success": true,
-  "projectFilePath": "E:\\11111\\TestBuild\\TestBuild.csproj",
+  "projectFilePath": "E:\\11111\\TraceLib\\TraceLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitiav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

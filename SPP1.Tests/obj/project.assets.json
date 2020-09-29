@@ -1125,17 +1125,17 @@
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
         }
       },
-      "ConsoleApp1/1.0.0": {
+      "TraceLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
-          "bin/placeholder/ConsoleApp1.dll": {}
+          "bin/placeholder/TraceLib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ConsoleApp1.dll": {}
+          "bin/placeholder/TraceLib.dll": {}
         }
       }
     }
@@ -4116,18 +4116,18 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
-    "ConsoleApp1/1.0.0": {
+    "TraceLib/1.0.0": {
       "type": "project",
-      "path": "../ConsoleApp1/ConsoleApp1.csproj",
-      "msbuildProject": "../ConsoleApp1/ConsoleApp1.csproj"
+      "path": "../TraceLib/TraceLib.csproj",
+      "msbuildProject": "../TraceLib/TraceLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ConsoleApp1 >= 1.0.0",
       "FluentAssertions >= 5.10.3",
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
+      "TraceLib >= 1.0.0",
       "nunit >= 3.12.0",
       "xunit >= 2.4.1"
     ]
@@ -4162,8 +4162,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\11111\\ConsoleApp1\\ConsoleApp1.csproj": {
-              "projectPath": "E:\\11111\\ConsoleApp1\\ConsoleApp1.csproj"
+            "E:\\11111\\TraceLib\\TraceLib.csproj": {
+              "projectPath": "E:\\11111\\TraceLib\\TraceLib.csproj"
             }
           }
         }

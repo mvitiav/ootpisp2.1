@@ -10,19 +10,6 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
-      },
-      "TraceLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "bin/placeholder/TraceLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TraceLib.dll": {}
-        }
       }
     }
   },
@@ -57,16 +44,11 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "TraceLib/1.0.0": {
-      "type": "project",
-      "path": "../TraceLib/TraceLib.csproj",
-      "msbuildProject": "../TraceLib/TraceLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "TraceLib >= 1.0.0"
+      "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
@@ -76,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\11111\\TestBuild\\TestBuild.csproj",
-      "projectName": "TestBuild",
-      "projectPath": "E:\\11111\\TestBuild\\TestBuild.csproj",
+      "projectUniqueName": "E:\\11111\\TraceLib\\TraceLib.csproj",
+      "projectName": "TraceLib",
+      "projectPath": "E:\\11111\\TraceLib\\TraceLib.csproj",
       "packagesPath": "C:\\Users\\vitiav\\.nuget\\packages\\",
-      "outputPath": "E:\\11111\\TestBuild\\obj\\",
+      "outputPath": "E:\\11111\\TraceLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -98,11 +80,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "E:\\11111\\TraceLib\\TraceLib.csproj": {
-              "projectPath": "E:\\11111\\TraceLib\\TraceLib.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -113,6 +91,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

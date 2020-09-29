@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
-namespace ConsoleApp1
+namespace TraceLib
 {
     public class ITracerImplementation : ITracer
     {

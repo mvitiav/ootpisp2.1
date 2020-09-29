@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Xml.Serialization;
 
-namespace ConsoleApp1.serializers
+namespace TraceLib.serializers
 {
     public class xmlSer : ISerializer
     {
