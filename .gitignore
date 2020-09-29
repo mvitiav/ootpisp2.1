@@ -1,1 +1,4 @@
 /ConsoleApp1/bin/Debug/*
+/ConsoleApp1/obj/Debug/*
+/ConsoleApp1/.vs/*
+Project1

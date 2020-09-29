@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XW4OL2Epp75foRy3vSng7eRvaEUNzcazLWeeuRvBfVxIe+uAw2kEyNJkpNFCkHXixGfK6oCGO8f7wx92qG/pYA==",
+  "success": true,
+  "projectFilePath": "E:\\11111\\TestBuild\\TestBuild.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vitiav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
