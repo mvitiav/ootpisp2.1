@@ -25,18 +25,18 @@ namespace ConsoleApp1
                 if (tr.fullname.Substring(0, s.Length) == s)
                 {
                     temp = s;
-                    tr.fullname = tr.fullname.Substring(s.Length+1);
+                 //   tr.fullname = tr.fullname.Substring(s.Length+1);
                     break;
                 }
             }
 
-            if (temp.Length > 0)
+            if ((temp.Length > 0)&& (tr.fullname.Length > temp.Length))
             {
+                tr.fullname = tr.fullname.Substring(temp.Length + 1);
                 methodz[temp].addMethodRecord(tr);
             }
             else
             {
-                //todo: change condition
                 if (!methodz.ContainsKey(tr.fullname)) { methodz[tr.fullname] = new methodRecord(); }
                 methodz[tr.fullname].fullName = tr.fullname;
                 methodz[tr.fullname].classname = tr.className;

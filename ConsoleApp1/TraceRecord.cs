@@ -19,9 +19,7 @@ namespace ConsoleApp1
 
         private long sums = 0;
 
-        private Thread thread;
-
-        //public List<TraceRecord> methods { get; private set; }
+        private Thread thread;    
 
         public int threadId { get { return thread.ManagedThreadId; } }
 

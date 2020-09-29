@@ -11,7 +11,6 @@
 
         public void save(string result)
         {
-            //System.IO.File.WriteAllText(@"C:\Users\Public\TestFolder\WriteText.txt", result);
             System.IO.File.WriteAllText(path, result);
         }
     }

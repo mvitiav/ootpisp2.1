@@ -8,24 +8,37 @@ namespace TestBuild
     class Program
     {
         static ITracer tracer;
-        static ISerializer serializer;
+        static ISerializer serializer=null;
         static IoutWriter writer;
-        string input;
+        static ConsoleKeyInfo pressedKey;
         static Thread tr1;
         static Thread tr2;
         static Random rnd = new Random();
 
         static void Main(string[] args)
         {
-
-            string input;
             tracer = new ITracerImplementation();
-            Console.WriteLine("1 - json other - xml");
-            input = Console.ReadLine();
-            if (input == "1") {
-                serializer = new jsonSer();
-            } else {
-                serializer = new xmlSer();
+
+            while (serializer == null)
+            {
+                Console.WriteLine("Hello! please, selecct serialization method:\n J) json\nX) xml");
+                //input = Console.ReadLine();
+                pressedKey = Console.ReadKey(true);
+                switch (pressedKey.Key)
+                {
+                    case ConsoleKey.J:
+                        serializer = new jsonSer();
+                        break;
+                    case ConsoleKey.X:
+                        serializer = new xmlSer();
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("ONLY J AND X ALLOWED!!!");
+                        pressedKey = Console.ReadKey(true);
+                        break;
+                }
+                Console.Clear();
             }
 
             tracer.StartTrace();
@@ -39,10 +52,6 @@ namespace TestBuild
 
             tr1.Join();
             tr2.Join();
-
-           // Thread.Sleep(500);
-
-
             tracer.StopTrace();
 
             TraceResult tr = tracer.GetTraceResult();
@@ -51,18 +60,13 @@ namespace TestBuild
             writer.save(serializer.serialize(tr));
             writer = new fileWriter("myfile.txt");
             writer.save(serializer.serialize(tracer.GetTraceResult()));
-            
-            
-
-
-            Console.WriteLine("Hello World!");
         }
 
         static void threadProc1() {
             tracer.StartTrace();
 
             for (int i = 0; i < 300; i++) {
-                Console.WriteLine("t1");
+                textWriter("t1");
                 Thread.Sleep(rnd.Next(1,5));
             }
 
@@ -71,18 +75,24 @@ namespace TestBuild
 
         static void threadProc2(){
 
-
-
             tracer.StartTrace();
+            threadProc1();
             for (int i = 0; i < 300; i++)
             {
-                Console.WriteLine("t2!");
+                textWriter("t2");
                 Thread.Sleep(rnd.Next(1, 5));
             }
             threadProc1();
             tracer.StopTrace();
 
+        }
 
+
+        static void textWriter(string s)
+        {
+            tracer.StartTrace();
+            Console.WriteLine(Thread.CurrentThread.ManagedThreadId.ToString()+":"+s);
+            tracer.StopTrace();
         }
 
 

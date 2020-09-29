@@ -4,14 +4,14 @@ using System.Linq;
 
 namespace ConsoleApp1
 {
-    //public interface TraceResult
-
     [Serializable]
     public class TraceResult
     {
         private Dictionary<int, threadRecord> threaDs;
 
         public List<threadRecord> threadz { get { return threaDs.Values.ToList(); } }
+
+        // fullfills task but breaks any of xml serializer
         //public IList<threadRecord> threads { get {return threaDs.Values.ToList().AsReadOnly(); } }
 
         public TraceResult()
@@ -21,7 +21,6 @@ namespace ConsoleApp1
 
         public void addTraceRecord(TraceRecord tr)
         {
-            //threads[tr.threadId].ad
             if (!threaDs.ContainsKey(tr.threadId)) { threaDs[tr.threadId] = new threadRecord(); threaDs[tr.threadId].id = tr.threadId; }
             threaDs[tr.threadId].addMethodRecord(tr);
         }

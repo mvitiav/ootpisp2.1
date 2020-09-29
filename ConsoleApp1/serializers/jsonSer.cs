@@ -6,6 +6,7 @@ namespace ConsoleApp1.serializers
     {
         public string serialize(TraceResult result)
         {
+            //optional
             //return JsonConvert.SerializeObject(result);
             return JsonConvert.SerializeObject(result, Formatting.Indented);
         }
