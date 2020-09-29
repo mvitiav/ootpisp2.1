@@ -1,4 +1,8 @@
 /ConsoleApp1/bin/Debug/*
 /ConsoleApp1/obj/Debug/*
+/SPP1.Tests/bin/Debug/*
+/SPP1.Tests/obj/Debug/*
+/TestBuild/bin/Debug/*
+/TestBuild/obj/Debug/*
 /ConsoleApp1/.vs/*
 Project1
